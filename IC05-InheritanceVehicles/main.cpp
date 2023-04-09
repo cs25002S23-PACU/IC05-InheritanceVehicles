@@ -19,6 +19,7 @@
 int main() {
 	vector <Truck> cTrucks;
 
+	// Test of Truck class
 	Truck cMyTruck("Toyota", 1994, 220000, 5000, Truck::Doors::FIVE);
 	Truck cYourTruck("Ford", 2016, 80000, 20000, Truck::Doors::TWO);
 
@@ -28,6 +29,11 @@ int main() {
 	for (Truck cTruck : cTrucks) {
 		cout << cTruck << endl;
 	}
+
+	// Test of Passenger Vehicle Class
+	PassengerVehicle myPassengerVehicle("Honda", 2005, 201000, 6000, 
+																			3500, 1500); 
+	cout << myPassengerVehicle << endl;
 
 	return EXIT_SUCCESS;
 }
