@@ -12,16 +12,19 @@
 //*********************************************************************
 // Constructor: Truck
 //
-// Description:	
+// Description:	Initializes data members to passed-in values
 //
-// Parameters:	
+// Parameters:	make - make of the vehicle
+//							modelYear  - model year of the vehicle
+//							mileage - mileage driving in miles	
+//							price - price in dollars
+//							numberofDoors - number of doors
 //							
-//
 // Returned:		none
 //*********************************************************************
 Truck::Truck(string make, int modelYear, double mileage, double price,
-	Doors NumberOfDoors) : Vehicle(make, modelYear, mileage, price) {
-	mNumberOfDoors = NumberOfDoors;
+	Doors numberOfDoors) : Vehicle(make, modelYear, mileage, price) {
+	mNumberOfDoors = numberOfDoors;
 }
 
 //*********************************************************************
@@ -40,6 +43,16 @@ void Truck::print(std::ostream& rcOutStream) const {
 	rcOutStream << ", Number of Doors: " << mNumberOfDoors;
 }
 
+//*********************************************************************
+// Function:	  operator<<
+//
+// Description:	Output the Truck to the stream 
+//
+// Parameters:	rcOutStream - the stream to output to
+//              rcTruck - the Truck to output
+//
+// Returned:		ostream - the output stream
+//*********************************************************************
 ostream& operator<< (ostream& rcOutStream, Truck& rcTruck) {
 	rcTruck.print(rcOutStream);
 	return rcOutStream;
