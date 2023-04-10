@@ -21,10 +21,14 @@ public:
   PassengerVehicle(string make, int modelYear, double mileage,
     double price, double weight, double towingCapacity);
 
-  friend ostream& operator<< (ostream& rcStream,
-    PassengerVehicle& rcPassengerVehicle);
+  double getWeight () const; 
+
+  double getTowingCapacity () const; 
 
   void print(ostream& rcOut) const;
+
+  friend ostream& operator<< (ostream& rcStream,
+    PassengerVehicle& rcPassengerVehicle);
 
 private:
   double mWeight; 

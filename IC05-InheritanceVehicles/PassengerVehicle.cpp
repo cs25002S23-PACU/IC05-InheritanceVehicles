@@ -33,12 +33,42 @@ PassengerVehicle::PassengerVehicle(string make, int modelYear,
 }
 
 //*********************************************************************
+// Function:	  getWeight
+//
+// Description:	Retrieve the weight of the passenger vehicle
+//
+// Parameters:	None
+//
+// Returned:		double - the weight of the passenger vehicle 
+//*********************************************************************
+
+double PassengerVehicle::getWeight () const {
+	return mWeight;
+}
+
+//*********************************************************************
+// Function:	  getTowingCapacity
+//
+// Description:	Retrieve the towing capacity of the passenger vehicle
+//
+// Parameters:	None
+//
+// Returned:		double - the towing capacity of the passenger vehicle 
+//*********************************************************************
+
+double PassengerVehicle::getTowingCapacity () const {
+	return mTowingCapacity; 
+}
+
+
+
+//*********************************************************************
 // Function:	  print
 //
-// Description:	Output the Truck to the stream
+// Description:	Output the Passenger Vehicle to the stream
 //
-// Parameters:	rcOutput - the stream to output to
-//              cTruck - the Truck to output
+// Parameters:	rcOutStream - the stream to output to
+//              cPassengerVehicle - the Passenger Vehicle to output
 //
 // Returned:		ostream - the output stream
 //*********************************************************************
@@ -52,10 +82,10 @@ void PassengerVehicle::print(std::ostream& rcOutStream) const {
 //*********************************************************************
 // Function:	  operator<<
 //
-// Description:	Output the Truck to the stream 
+// Description:	Output the Passenger Vehicle to the stream 
 //
 // Parameters:	rcOutStream - the stream to output to
-//              rcTruck - the Truck to output
+//              rcPassengerVehicle - the Passenger Vehicle to output
 //
 // Returned:		ostream - the output stream
 //*********************************************************************

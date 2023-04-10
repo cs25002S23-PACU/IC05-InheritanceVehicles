@@ -39,22 +39,22 @@ Vehicle::Vehicle(string make, int modelYear, double mileage,
 //
 // Parameters:	none
 //
-// Returned:		the make of the vehicle
+// Returned:		string - the make of the vehicle
 //*********************************************************************
 string Vehicle::getMake() const {
 	return mMake;
 }
 
 //*********************************************************************
-// Function:	  geModelYear
+// Function:	  getModelYear
 //
 // Description:	retrieve the model year of the vehicle
 //
 // Parameters:	none
 //
-// Returned:		the model year of the vehicle
+// Returned:		int - the model year of the vehicle
 //*********************************************************************
-int  Vehicle::getModelYear() const {
+int Vehicle::getModelYear() const {
 	return mModelYear;
 }
 
@@ -65,7 +65,7 @@ int  Vehicle::getModelYear() const {
 //
 // Parameters:	None
 //
-// Returned:		The mileage of the vehicle
+// Returned:		double - the mileage of the vehicle
 //*********************************************************************
 double Vehicle::getMileage() const {
 	return mMileage; ;
@@ -78,7 +78,7 @@ double Vehicle::getMileage() const {
 //
 // Parameters:	None
 //
-// Returned:		The mileage of the vehicle
+// Returned:		double - the price of the vehicle
 //*********************************************************************
 double Vehicle::getPrice() const {
 	return mPrice;
@@ -89,7 +89,7 @@ double Vehicle::getPrice() const {
 //
 // Description:	Output the Employee to the stream
 //
-// Parameters:	rcOutput - the stream to output to
+// Parameters:	rcOutStream - the stream to output to
 //              cVehicle - the Vehicle to output
 //
 // Returned:		ostream - the output stream
