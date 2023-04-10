@@ -60,8 +60,6 @@ double PassengerVehicle::getTowingCapacity () const {
 	return mTowingCapacity; 
 }
 
-
-
 //*********************************************************************
 // Function:	  print
 //
