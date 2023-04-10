@@ -36,14 +36,27 @@ int main() {
 	cTrucks.push_back(cMyTruck);
 	cTrucks.push_back(cYourTruck);
 
+	cout << "Trucks:\n"; 
 	for (Truck cTruck : cTrucks) {
 		cout << cTruck << endl;
 	}
 
 	// Test of Passenger Vehicle Class
-	PassengerVehicle myPassengerVehicle("Honda", 2005, 201000, 6000, 
-																			3500, 1500); 
-	cout << myPassengerVehicle << endl;
+	PassengerVehicle cMyPassengerVehicle ("Honda", 2005, 201000, 6000,
+		3500, 1500);
+
+	cout << "\nPassenger Vehicle:\n"; 
+	cout << cMyPassengerVehicle << endl;
+
+	cout << "The weight of my " << cMyPassengerVehicle.getModelYear ()
+		   << " " << cMyPassengerVehicle.getMake() << " is "
+		   << cMyPassengerVehicle.getWeight() << "lbs" << endl;
+
+	// Test of SUV class
+
+
+
+	// Test of Car class
 
 	return EXIT_SUCCESS;
 }
