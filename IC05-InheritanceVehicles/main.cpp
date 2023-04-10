@@ -16,6 +16,16 @@
 #include "SUV.h"
 #include "PassengerVehicle.h"
 
+//*********************************************************************
+// Function:	  main
+//
+// Description:	Driver for the inheritance project
+//
+// Parameters:	None
+//
+// Returned:		EXIT_SUCCESS
+//*********************************************************************
+
 int main() {
 	vector <Truck> cTrucks;
 
